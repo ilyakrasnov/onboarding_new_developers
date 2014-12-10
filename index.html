@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Onboarding new developers successfully</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Ilya Krasnov">
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+	<script>
+	if( window.location.search.match( /print-pdf/gi ) ) {
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = 'css/print/pdf.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	}
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<!-- Title -->
+				<section>
+					<h1>ONBOARDING</h1>
+					<h3>New Developers Successfully</h3>
+					<p>
+						<small>by <a href="http://ilyakrasnov.com">Ilya Krasnov</a> / <a href="http://twitter.com/ilyakrasnov">@ilyakrasnov</a></small>
+					</p>
+				</section>
+
+				<!-- Agenda -->
+				<section>
+					<!-- <h2>Clever Quotes</h2> -->
+					<p>
+						<q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+							&ldquo;Complexity is a symptom of confusion, not a cause.&rdquo;</q>
+							<br>Jeff Hawkins
+						</p>
+					</section>
+
+					<!-- Example of nested vertical slides -->
+
+					<section>
+						<h2>What we* need</h2>
+						<ol>
+							<li>Relate</li>
+							<li>Educate</li>
+							<li>Translate</li>
+						</ol>
+						<p>
+							<small style="line-height: 8.2em;">* new developers</small>
+						</p>
+					</section>
+
+					<section>
+						<h2>Relate</h2>
+						<ol>
+							<li class="fragment">Good to know you...</li>
+							<li class="fragment">What's your machine?</li>
+							<li class="fragment">AwesomeOffice: jCfywQFJ</li>
+						</ol>
+					</section>
+
+
+					<section>
+						<section>
+							<p>
+								<q  cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+									&ldquo;An investment in knowledge pays the best interest.&rdquo;</q>
+									<br>Benjamin Franklin
+								</section>
+								<section>
+									<h2>Educate</h2>
+									<ol>
+										<li>9-5</li>
+										<li class="fragment">ÜNB = TSO & BHKW = CHP</li>
+										<li class="fragment">Repeat 1&2 as needed</li>
+									</ol>
+								</section>
+
+							</section>
+							<section>
+								<section>
+									<h2>Translate*</h2>
+									<ul>
+										<li class="fragment">Gemfile</li>
+										<li class="fragment">schema.rb</li>
+										<li class="fragment">run, print & pin THIS ONE</li>
+									</ul>
+									<p>
+										<small style="line-height: 8.2em;">* here comes the promised gem</small>
+									</p>
+								</section>
+								<section>
+									<h3>ruby-erd</h3>
+								<a href="http://voormedia.github.io/rails-erd/" target="_blank">Generates diagrams</a> based on your ActiveRecord models
+										<pre class="fragment"><code class="ruby hljs" data-trim>
+group :development do
+	gem "rails-erd"
+end
+									</code></pre>
+									<pre class="fragment"><code class="terminal hljs" data-trim>
+rake erd
+									</code></pre>
+								</section>
+								<section>
+									<img src="lib/images/erd_result.png">
+								</section>
+
+							</section>
+
+						</section>
+
+
+						<section>
+							<h1>THANK YOU</h1>
+						</section>
+
+					</div>
+
+				</div>
+
+				<script src="lib/js/head.min.js"></script>
+				<script src="js/reveal.min.js"></script>
+
+				<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+</script>
+
+</body>
+</html>
